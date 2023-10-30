@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API_ABAN</name>
+    </assembly>
+    <members>
+        <member name="M:API_ABAN.Controllers.ClientesController.GetCliente">
+            <summary>
+            Obtiene un listado de Clientes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:API_ABAN.Controllers.ClientesController.GetByIdCliente(System.Int32)">
+            <summary>
+            Consulta clientes por ID.
+            </summary>
+            <param name="id">Id del Cliente a consultar.</param>
+            <returns></returns>
+        </member>
+        <member name="M:API_ABAN.Controllers.ClientesController.FilterByNameCliente(System.String)">
+            <summary>
+            Filtro de clientes por Nombre, colocando una o varias letras, busca los nombres que contengan esas letras
+            </summary>
+            <param name="name">Nombre del Cliente a consultar.</param>
+            <returns></returns>
+        </member>
+        <member name="M:API_ABAN.Controllers.ClientesController.PostCliente(API_ABAN.Models.Dtos.ClienteCreateDTO)">
+            <summary>
+            Crear un nuevo cliente con su dirección.
+            </summary>
+            <param name="clienteCreateDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_ABAN.Controllers.ClientesController.PutCliente(System.Int32,API_ABAN.Models.Dtos.ClienteUpdateDTO)">
+            <summary>
+            Modifica un cliente con su dirección.
+            </summary>
+            <param name="id">Id del Cliente a modificar.</param>
+            <param name="clienteUpdateDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:API_ABAN.Controllers.ClientesController.DeleteCliente(System.Int32)">
+            <summary>
+            Delete Lógico de Clientes.
+            </summary>
+            <param name="id">Id del Cliente a marcar como eliminado.</param>
+            <returns></returns>
+        </member>
+        <member name="M:API_ABAN.Controllers.ClientesController.RestaurarCliente(System.Int32)">
+            <summary>
+            Restaurar registro con Delete Lógico.
+            </summary>
+            <param name="id">Id del Cliente marcado como eliminado que se quiere rastaurar.</param>
+            <returns></returns>
+        </member>
+        <member name="T:API_ABAN.Migrations.CrearBDModelodeDatosDatosIniciales">
+            <inheritdoc />
+        </member>
+        <member name="M:API_ABAN.Migrations.CrearBDModelodeDatosDatosIniciales.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API_ABAN.Migrations.CrearBDModelodeDatosDatosIniciales.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API_ABAN.Migrations.CrearBDModelodeDatosDatosIniciales.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
