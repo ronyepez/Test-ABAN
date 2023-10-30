@@ -163,8 +163,10 @@ Verificar en SQL que se haya creado la BD `TestAban_Ry` con las tablas `clientes
     "pais": "Argentina"
   }
 }```
+
 ###### Respuesta Exitosa: `200 OK`
 ###### Respuesta Exitosa (Ejemplo):
+
 ```
 {
   "message": "Cliente agregado correctamente.",
@@ -178,6 +180,7 @@ Verificar en SQL que se haya creado la BD `TestAban_Ry` con las tablas `clientes
 ###### Descripción: `Este endpoint permite actualizar la información de un cliente existente. Debes proporcionar el ID del cliente en la ruta y los detalles actualizados en el cuerpo de la solicitud.`
 ###### Parámetros de Ruta: `id (int)` Identificador único del cliente.
 ###### Cuerpo de la Solicitud (Ejemplo):
+
 ```
 {
     "nombres": "Carmen Luisa",
@@ -196,24 +199,29 @@ Verificar en SQL que se haya creado la BD `TestAban_Ry` con las tablas `clientes
   }
 }
 ```
+
 ###### Respuesta Exitosa: `204 No Content`
 ###### Respuesta Exitosa (Ejemplo):
+
 ```
 {
   "message": "Cliente Modificado correctamente."
 }
 ```
+
 ### 6. Eliminar Cliente (Lógicamente)
 ###### Método: `DELETE`
 ###### Ruta: `/clientes/{id}`
 ###### Descripción: `Este endpoint permite eliminar lógicamente un cliente al establecer el campo DeletedAt en true.`
 ###### Parámetros de Ruta: `id (int)` Identificador único del cliente.
 ###### Respuesta Exitosa: `204 No Content`
+
 ```
 {
   "message": "Cliente Eliminado correctamente."
 }
 ```
+
 ### 7. Restaurar Cliente
 ###### Método: `POST`
 ###### Ruta: `/clientes/restaurar/{id}`
@@ -221,6 +229,7 @@ Verificar en SQL que se haya creado la BD `TestAban_Ry` con las tablas `clientes
 ###### Parámetros de Ruta: `id (int): Identificador único del cliente.`
 ###### Respuesta Exitosa: `200 OK`
 ###### Respuesta Exitosa (Ejemplo):
+
 ```
 {
   "message": "Cliente Restaurado correctamente."
@@ -232,6 +241,7 @@ Se agregaron las siguientes las sigueintes validaciones en el create y update:
 ##### Campo: `Nombre`
 ##### Descripción: `El Nombre es obligatorio`
 ##### Ejemplo de response:
+
 ```
 {
   "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
@@ -245,9 +255,11 @@ Se agregaron las siguientes las sigueintes validaciones en el create y update:
   }
 }
 ```
+
 ##### Campo: `Apellido`
 ##### Descripción: `El Apellido es obligatorio`
 ##### Ejemplo de response:
+
 ```
 {
   "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
@@ -261,9 +273,11 @@ Se agregaron las siguientes las sigueintes validaciones en el create y update:
   }
 }
 ```
+
 ##### Campo: `CUIT`
 ##### Descripción: `El CUIT es obligatorio`
 ##### Ejemplo de response:
+
 ```
 {
   "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
@@ -277,9 +291,11 @@ Se agregaron las siguientes las sigueintes validaciones en el create y update:
   }
 }
 ```
+
 ##### Campo: `Email`
 ##### Descripción: `Dirección de correo electrónico no válida`
 ##### Ejemplo de response:
+
 ```
 {
   "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
