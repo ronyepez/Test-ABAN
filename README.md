@@ -14,7 +14,7 @@
 
 ## 🔥 ACERCA DEL PROYECTO
 
-🦄 Este proyecto es una muestra de una solución CRUD base de una API con autenticación JWT. Se utilizó ``ASP.NET Core 6`` Web API.
+Este proyecto es una muestra de una solución CRUD base de una API con autenticación JWT. Se utilizó ``ASP.NET Core 6`` Web API.
 
 ## ✔️ CARACTERÍSTICAS
 
