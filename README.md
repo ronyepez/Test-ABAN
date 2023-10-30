@@ -340,4 +340,4 @@ Se utilizó para encapsular la interacción con la base de datos en el ClienteRe
 Se utilizó para mapear entre las entidades y los DTOs. Esto reduce la complejidad de copiar manualmente los datos y mejora la legibilidad del código.
 Estos principios y patrones ayudan a crear un código más mantenible, flexible y escalable, lo que facilita la incorporación de nuevas funcionalidades y la gestión de cambios en el proyecto a medida que evoluciona.
 
-###End
+### End
